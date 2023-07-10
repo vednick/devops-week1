@@ -32,7 +32,7 @@ jobs:
       - name: Pytest-cov
         run: |
           pip install pytest-cov
-          pytest --cov=devops-week1 tests/
+          pytest --cov tests/
 
       - name: Pytest coverage comment
         uses: MishaKav/pytest-coverage-comment@main
