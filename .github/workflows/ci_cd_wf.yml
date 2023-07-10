@@ -30,7 +30,7 @@ jobs:
 
       - name: Pytest-cov
         run: |
-          pytest --cov=devops-week1 tests/
+          pytest --cov=vednick/devops-week1 tests/
 
       - name: Pytest coverage comment
         uses: MishaKav/pytest-coverage-comment@main
