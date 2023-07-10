@@ -24,6 +24,12 @@ jobs:
       - name: Install Dependencies
         run: |
           python -m pip install -r requirements.txt
+
       - name: Run tests
         run: |
           python -m pytest -v tests
+
+      - name: Pytest-cov
+        run: |
+          pip install pytest-cov
+          pytest --cov tests/
